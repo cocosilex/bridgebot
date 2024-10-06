@@ -1,0 +1,16 @@
+{
+  "name": "bridgebot",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cocosilex",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "discord.js": "^14.16.2",
+    "mineflayer": "^4.20.1",
+    "nodemon": "^3.1.7"
+  }
+}
