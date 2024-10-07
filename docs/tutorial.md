@@ -14,7 +14,7 @@
 ## (II) Download the code an setup it
 > 1. First, download the [src](../src) directory on your workspace.
 >
-> 2. Make sure you have [node.js](https://nodejs.org/en), after, open a terminal, go to the src directory and run `npm install`, that will download the required node modules user for the bot.
+> 2. Make sure you have [node.js](https://nodejs.org/en), after, open a terminal, go to the src directory and run `npm install`, that will download the required node modules used for the bot.
 >
 > 3. in your src directory, go to the file named `settings.js` and fill all the blankspaces, for the Minecraft account make sure your double authentication is disabled (for information ,the module used is [Mineflayer](https://github.com/PrismarineJS/mineflayer)). 
 >
