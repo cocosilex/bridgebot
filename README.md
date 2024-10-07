@@ -6,11 +6,11 @@
 
 ## How to setup ?
 
-> To setup the bot you can follow the [tutorial](https://github.com/cocosilex/bridgebot/blob/master/docs/tutorial.md). If you have any questions you can ask on our discord
+> To setup the bot you can follow the [tutorial](https://github.com/cocosilex/bridgebot/blob/master/docs/tutorial.md). If you have any questions you can ask on our [discord](https://discord.gg/Xs8cqx5Awq)
 
 ## Bugs report
 
-> Please report bugs on our discord
+> Please report bugs on our [discord](https://discord.gg/Xs8cqx5Awq)
 
 
 
