@@ -3,9 +3,9 @@
 ## (I) Setup a bot on discord panel
 > 1. Go to the [developer dashboard](https://discord.com/developers/applications), and create an application.
 >
-> 2. In this application, set a name, go in the "bot" category and allow all intents ![allow all intents](./GatewayIntents.jpg)
+> 2. In this application, set a name, go in the "bot" category and allow all intents ![allow all intents](./images/GatewayIntents.jpg)
 >
-> 3. Go to the "installation" category, use the method "guild install" with the discord provided link, make sure to allow the administrator right like in this picture ![installation rights](./InstallationRights.jpg)
+> 3. Go to the "installation" category, use the method "guild install" with the discord provided link, make sure to allow the administrator right like in this picture ![installation rights](./images/InstallationRights.jpg)
 >
 > 4. After you have added your bot to your server, i recommend to setting up the bot state to private (in the "bot" category), for that you will need to set the install link to "none" in the installation category.
 >

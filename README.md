@@ -1,5 +1,5 @@
 # Bridge Bot : A simple bot for hypixel bridges
-
+![image](./docs/images/name.png)
 ## What is BridgeBot ?
 
 > Bridge Bot is a tool developped by @cocosilex, he can do the discord-hypixel link.
