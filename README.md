@@ -1,4 +1,3 @@
-# Bridge Bot : A simple bot for hypixel bridges
 ![image](./docs/images/name.png)
 ## What is BridgeBot ?
 
