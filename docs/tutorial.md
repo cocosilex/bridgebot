@@ -17,7 +17,7 @@
 > 2. Make sure you have [node.js](https://nodejs.org/en), after, open a terminal, go to the src directory and run `npm install`, that will download the required node modules used for the bot.
 
 > 3. in your src directory, go to the file named `settings.js` and fill all the blankspaces, for the Minecraft account make sure your double authentication is disabled (for information ,the module used is [Mineflayer](https://github.com/PrismarineJS/mineflayer)). You need :
-> - The discord token can be generated here (in the "bot" section on developper portal) : ![token](./images/Token.png)
+> - The discord token, he can be generated here (in the "bot" section on developper portal) : ![token](./images/Token.png)
 > - All of the informations needed about the minecraft account
 > - Id of channel where you want to send messages
 
