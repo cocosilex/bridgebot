@@ -16,12 +16,12 @@ function reconnectbot() {
 }
 
 function createBot() {
-    bot = mineflayer.createBot({
-      host: "hypixel.net",
-      username: SETTINGS.minecraftAccount.email,
-      password: SETTINGS.minecraftAccount.password,
-      version: "1.8.9",
-      auth: "microsoft",
+  bot = mineflayer.createBot({
+    host: "hypixel.net",
+    username: SETTINGS.minecraftAccount.email,
+    password: SETTINGS.minecraftAccount.password,
+    version: "1.8.9",
+    auth: "microsoft",
   });
 }
 
@@ -57,7 +57,7 @@ bot.on("error", (error) => {
   }
 });
 
-module.exports = { 
+module.exports = {
   sendMessageInChat: (message) => {
     bot.chat(`/gc ${message}`);
   }
