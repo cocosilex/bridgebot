@@ -15,18 +15,17 @@ function reconnectbot() {
   }, autoReconnectCooldown);
 }
 
-let bot;
 function createBot() {
-  bot = mineflayer.createBot({
-    host: "hypixel.net",
-    username: SETTINGS.minecraftAccount.email,
-    password: SETTINGS.minecraftAccount.password,
-    version: "1.8.9",
-    auth: "microsoft",
+    bot = mineflayer.createBot({
+      host: "hypixel.net",
+      username: SETTINGS.minecraftAccount.email,
+      password: SETTINGS.minecraftAccount.password,
+      version: "1.8.9",
+      auth: "microsoft",
   });
 }
 
-createBot();
+let bot = createBot();
 
 bot.on("message", async (message) => {
   const realMessage = `message ${message}`;
