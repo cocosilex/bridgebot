@@ -1,7 +1,9 @@
 const SETTINGS = {
     discordToken:"",
-    // min 1000
+    // min 1000, in ms
     autoReconnectToMinecraftCooldown:3_000,
+    // min 1, in seconds
+    bridgeCooldown:5,
     minecraftAccount: {
         pseudo:"",
         email:"",
