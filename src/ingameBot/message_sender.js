@@ -32,13 +32,13 @@ module.exports = {
                  }
             }
             
-            if(currentMessage.length < 128) {
+            if(currentMessage.length < 110) {
                 messagesToSend.push(currentMessage)
             } else {
                 // Divide the message in less than 128 characters parts without cutting a word
                 let messageParts = currentMessage.split(/(?<=\s)/);
                 for(let i = 0; i < messageParts.length; i++) {
-                    if(currentMessage.length + messageParts[i].length < 128) {
+                    if(currentMessage.length + messageParts[i].length < 110) {
                         currentMessage += messageParts[i];
                     } else {
                         messagesToSend.push(currentMessage);
