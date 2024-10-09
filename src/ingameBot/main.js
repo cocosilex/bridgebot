@@ -60,6 +60,6 @@ bot.on("error", (error) => {
 
 module.exports = { 
   sendMessageInChat: (message) => {
-    bot.chat(message);
+    bot.chat(`/gc ${message}`);
   }
 };

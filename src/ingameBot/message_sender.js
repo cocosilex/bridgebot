@@ -13,28 +13,28 @@ module.exports = {
               const repliedMember = message.mentions.members.find(member => member.id = message.mentions.repliedUser.id)
 
               if(message.member.nickname && repliedMember.nickname) {
-                    messageToSend = `/gc ${message.member.nickname} > ${repliedMember.nickname}: ${message.content}`
+                    messageToSend = `${message.member.nickname} > ${repliedMember.nickname}: ${message.content}`
                  } else if (message.member.nickname) {  
-                    messageToSend = `/gc ${message.member.nickname} > ${message.mentions.repliedUser.displayName}: ${message.content}`
+                    messageToSend = `${message.member.nickname} > ${message.mentions.repliedUser.displayName}: ${message.content}`
                 } else if(!repliedMember) {
-                    messageToSend = `/gc ${message.member.displayName} > ${message.mentions.repliedUser.displayName}: ${message.content}`
+                    messageToSend = `${message.member.displayName} > ${message.mentions.repliedUser.displayName}: ${message.content}`
                 } else if(repliedMember.nickname) {
-                    messageToSend = `/gc ${message.member.displayName} > ${repliedMember.nickname}: ${message.content}`
+                    messageToSend = `${message.member.displayName} > ${repliedMember.nickname}: ${message.content}`
                 } else {
-                    messageToSend = `/gc ${message.member.displayName} > ${message.mentions.repliedUser.displayName}: ${message.content}`
+                    messageToSend = `${message.member.displayName} > ${message.mentions.repliedUser.displayName}: ${message.content}`
                  }
             } else {
               if(message.member.nickname) {
-                    messageToSend = `/gc ${message.member.nickname}: ${message.content}`
+                    messageToSend = `${message.member.nickname}: ${message.content}`
                  } else {
-                    messageToSend = `/gc ${message.member.displayName}: ${message.content}`
+                    messageToSend = `${message.member.displayName}: ${message.content}`
                  }
             }
             
             if(messageToSend.length < 128) {
                 messagesToSend.push(messageToSend)
             } else {
-                matchedMessage = messageToSend.match(/.{1,128}/g)
+                matchedMessage = messageToSend.match(/.{1,100}/g)
                 for(let messages in matchedMessage) {
                     messagesToSend.push(messages)
                 }
