@@ -11,7 +11,7 @@ module.exports = {
             let messageToSend 
             if(message.type === MessageType.Reply) {
               const repliedMember = message.mentions.members.find(member => member.id = message.mentions.repliedUser.id)
-              
+
               if(message.member.nickname && repliedMember.nickname) {
                     messageToSend = `/gc ${message.member.nickname} > ${repliedMember.nickname}: ${message.content}`
                  } else if (message.member.nickname) {  
@@ -34,12 +34,9 @@ module.exports = {
             if(messageToSend.length < 128) {
                 messagesToSend.push(messageToSend)
             } else {
-                for(let i = 0; Math.ceil(messageToSend.length/128); i++) {
-                    if(i + 1 === Math.ceil(messageToSend.length/128)) {
-                        messagesToSend.push(messageToSend.slice(i*128, messageToSend.length))
-                    } else {
-                        messagesToSend.push(messageToSend.slice(i*128, (i + 1)*128))
-                    }
+                matchedMessage = messageToSend.match(/.{1,128}/g)
+                for(let messages in matchedMessage) {
+                    messagesToSend.push(messages)
                 }
             }
           } 
@@ -48,7 +45,6 @@ module.exports = {
 }
 
 function bridgeInit() {
-    console.log('bridgeinit')
     cron.schedule(`*/${SETTINGS.bridgeCooldown} * * * * *`, () => {
       if(messagesToSend.length > 0) {
         sendMessageInChat(messagesToSend[0])

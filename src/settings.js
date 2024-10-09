@@ -3,7 +3,7 @@ const SETTINGS = {
     // min 1000, in ms
     autoReconnectToMinecraftCooldown:3_000,
     // min 1, in seconds
-    bridgeCooldown:5,
+    bridgeCooldown:1,
     minecraftAccount: {
         pseudo:"",
         email:"",
