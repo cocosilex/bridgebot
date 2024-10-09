@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ."
   },
   "author": "cocosilex",
-  "license": "ISC",
+  "contributors": [
+    "cocosilex",
+    "Dario Le Hy"
+  ],
+  "license": "GPL-3.0-only",
   "description": "",
   "dependencies": {
     "discord.js": "^14.16.2",

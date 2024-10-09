@@ -15,7 +15,6 @@ function reconnectbot() {
   }, autoReconnectCooldown);
 }
 
-let bot;
 function createBot() {
   bot = mineflayer.createBot({
     host: "hypixel.net",
@@ -26,7 +25,7 @@ function createBot() {
   });
 }
 
-createBot();
+let bot = createBot();
 
 bot.on("message", async (message) => {
   const realMessage = `message ${message}`;
@@ -58,7 +57,7 @@ bot.on("error", (error) => {
   }
 });
 
-module.exports = { 
+module.exports = {
   sendMessageInChat: (message) => {
     bot.chat(`/gc ${message}`);
   }
