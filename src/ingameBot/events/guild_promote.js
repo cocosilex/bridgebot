@@ -5,6 +5,7 @@ const { getUsername } = require("../functions/get_username");
 
 module.exports = {
   promote: async (message) => {
+    if(SETTINGS.channels.promoteDemoteId === "-1") return;
     const promoteEmbed = new EmbedBuilder()
       .setAuthor({
         name:'Member Promoted',

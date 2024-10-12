@@ -5,6 +5,7 @@ const { getUsername } = require("../functions/get_username");
 
 module.exports = {
   kick: async (message) => {
+    if(SETTINGS.channels.kickId === "-1") return;
     const kickEmbed = new EmbedBuilder()
       .setAuthor({
         name:'Member Kicked',

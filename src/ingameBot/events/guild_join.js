@@ -5,6 +5,7 @@ const { getUsername } = require("../functions/get_username");
 
 module.exports = {
   join: async (message) => {
+    if(SETTINGS.channels.leaveJoinId === "-1") return;
     const joinEmbed = new EmbedBuilder()
       .setAuthor({
         name:'Member Joined',

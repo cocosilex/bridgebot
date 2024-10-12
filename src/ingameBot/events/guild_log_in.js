@@ -5,6 +5,7 @@ const { getWebHook } = require("../functions/get_webhook");
 
 module.exports = {
   log_in: async (message) => {
+    if(SETTINGS.channels.logInOffId === "-1") return;
     const logInEmbed = new EmbedBuilder()
       .setColor(0x008000)
       .setDescription(message.slice(16, message.length));

@@ -4,6 +4,7 @@ const { getWebHook } = require("../functions/get_webhook");
 
 module.exports = {
   bridge: async (message) => {
+    if(SETTINGS.channels.bridgeId === "-1") return;
     const informationsAboutSender = message.slice(0, message.indexOf(":"));
     const messageContent = message.slice(message.indexOf(":") + 2, message.length);
 

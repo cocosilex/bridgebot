@@ -5,7 +5,7 @@ const { getUsername } = require("../functions/get_username");
 
 module.exports = {
   demote: async (message) => {
-    
+    if(SETTINGS.channels.promoteDemoteId === "-1") return;
     const demoteEmbed = new EmbedBuilder()
       .setAuthor({
         name:'Member Demoted',
