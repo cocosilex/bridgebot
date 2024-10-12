@@ -10,6 +10,7 @@ const SETTINGS = {
         password:"",
     },
     channels: {
+        // You can set the value to '-1' if you want to disable the feature
         bridgeId:'',
         logInOffId:'',
         kickId:'',
