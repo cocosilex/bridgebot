@@ -8,7 +8,6 @@ let messagesToSend = []
 module.exports = {
     send_message: (message) => {
         if (message.author.tag !== client.user.tag && message.channelId === SETTINGS.channels.bridgeId && ! message.author.bot) {
-            // Renamed to currentMessage for clarity
             let currentMessage = "";
             if(message.type === MessageType.Reply) {
               const repliedMember = message.mentions.members.find(member => member.id = message.mentions.repliedUser.id)
