@@ -1,7 +1,7 @@
 ![image](./docs/images/name.png) 
 ## What is BridgeBot ?
 
-> Bridge Bot is a tool developped by @cocosilex, he can do the discord-hypixel link. The main logo is [here](./docs/images/bridgebotlogo.png)
+> Bridge Bot is a tool developped by @cocosilex, he can do the discord-hypixel link. The main logo is [here](./docs/images/bridgebotlogo.png).
 
 ## Getting Started
 
