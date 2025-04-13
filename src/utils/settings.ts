@@ -7,10 +7,10 @@ export const SETTINGS = {
   maxMessagesInQueue: 1000,
   channels: {
     // You can set the value to '-1' if you want to disable the feature
-    bridgeId: "1352953120648462356",
-    logInOffId: "1352953120648462356",
-    kickId: "1352953120648462356",
-    promoteDemoteId: "1352953120648462356",
-    leaveJoinId: "1352953120648462356",
+    bridgeId: "",
+    logInOffId: "",
+    kickId: "",
+    promoteDemoteId: "",
+    leaveJoinId: "",
   },
 };
