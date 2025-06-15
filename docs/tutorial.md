@@ -20,7 +20,7 @@
 > - IDs of the **<ins>Text Channels</ins>** where you want to send messages
 > - You can also customize the auto-reconnect cooldown, the cooldown between messages sent in-game, and the maximum queue size for messages waiting to be sent.
 
-> 4. Fill out the .env file, for the Minecraft account make sure your double authentication is disabled (for information ,the module used is [Mineflayer](https://github.com/PrismarineJS/mineflayer)). You need :
+> 4. Fill out the .env file, for the Minecraft account make sure your double authentication is disabled (for information, the module used is [Mineflayer](https://github.com/PrismarineJS/mineflayer)). You need :
 > - The discord token, he can be generated here (in the "bot" section on developper portal) : ![token](./images/Token.png)
 > - All of the informations needed about the minecraft account
 
