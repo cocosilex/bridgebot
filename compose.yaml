@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: bridgebot
+    command: ['node', 'dist/index.js']
     restart: always
     volumes:
       - ./src:/bridgebot/src:ro
@@ -14,6 +15,12 @@ services:
       - .env
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
-      - MINECRAFT_PSEUDO=${MINECRAFT_PSEUDO}
+
       - MINECRAFT_EMAIL=${MINECRAFT_EMAIL}
       - MINECRAFT_PASSWORD=${MINECRAFT_PASSWORD}
+
+      - BRIDGE_CHANNEL_ID=${BRIDGE_CHANNEL_ID}
+      - LOG_IN_OFF_CHANNEL_ID=${LOG_IN_OFF_CHANNEL_ID}
+      - KICK_CHANNEL_ID=${KICK_CHANNEL_ID}
+      - PROMOTE_DEMOTE_CHANNEL_ID=${PROMOTE_DEMOTE_CHANNEL_ID}
+      - LEAVE_JOIN_CHANNEL_ID=${LEAVE_JOIN_CHANNEL_ID}
