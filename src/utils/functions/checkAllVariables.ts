@@ -42,11 +42,12 @@ export default function checkAllVariables() {
     }
 
     for (const channel in SETTINGS.channels) {
-      if (!SETTINGS.channels[channel as keyof typeof SETTINGS.channels]) {
+      const channelId = SETTINGS.channels[channel as keyof typeof SETTINGS.channels];
+      if (!channelId) {
         const errorMsg = `${channel} is not defined, please set the correct channel id or "-1" if you want to disable the feature in settings.ts file`;
         logger.error(errorMsg);
         throw new Error(errorMsg);
-      } else if (!(client.channels.cache.get(SETTINGS.channels[channel as keyof typeof SETTINGS.channels]) instanceof TextChannel)) {
+      } else if (channelId !== "-1" && !(client.channels.cache.get(channelId) instanceof TextChannel)) {
         const errorMsg = `${channel} is not a text channel, please insert an id of a Text Channel or "-1" if you want to disable the feature in settings.ts file`;
         logger.error(errorMsg);
         throw new Error(errorMsg);
