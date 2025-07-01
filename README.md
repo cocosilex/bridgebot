@@ -11,5 +11,6 @@
 
 > A section is disponible on our [discord](https://discord.gg/Xs8cqx5Awq) for bridgebot, you can report bugs and ask for help here.
 
-
+## Contributors
+@cocosilex @Luthys @Fytecas
 
