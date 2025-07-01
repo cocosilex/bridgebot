@@ -5,12 +5,13 @@
 
 ## Getting Started
 
-> To setup the bot you can follow the [tutorial](https://github.com/cocosilex/bridgebot/blob/master/docs/tutorial.md). If you have any questions you can ask on our [discord](https://discord.gg/Xs8cqx5Awq).
+> To setup the bot you can follow the [tutorial](https://github.com/cocosilex/bridgebot/blob/master/docs/tutorial.md).
 
 ## Bugs report & Support
 
-> A section is disponible on our [discord](https://discord.gg/Xs8cqx5Awq) for bridgebot, you can report bugs and ask for help here.
+> If you have an issue with the bot you can reate an issue or a PR where you fix that problem, thank you for bug reporting !
 
 ## Contributors
-@cocosilex @Luthys @Fytecas
+
+> @cocosilex @Luthys @Fytecas
 
