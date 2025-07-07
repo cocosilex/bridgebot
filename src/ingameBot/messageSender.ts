@@ -1,9 +1,9 @@
 import { Message, MessageType } from 'discord.js';
-import bot from './minecraftBot.js';
 import { SETTINGS } from '../utils/settings.js';
-import client from '../utils/client.js';
-import cron from 'node-cron';
 import logger from '../utils/logger.js';
+import client from '../utils/client.js';
+import bot from './minecraftBot.js';
+import cron from 'node-cron';
 
 interface MessageQueueItem {
 	content: string;
