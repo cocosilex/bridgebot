@@ -15,8 +15,6 @@ export default async function log_in(message: string): Promise<void> {
 				username: `${message.slice(8, message.indexOf(' ', 8))}`,
 				avatarURL: `https://mc-heads.net/avatar/${message.slice(8, message.indexOf(' ', 8))}`,
 			});
-		} else {
-			await channel.send('Webhook not found');
 		}
 	}
 }

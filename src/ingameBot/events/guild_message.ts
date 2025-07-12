@@ -42,8 +42,6 @@ export default async function bridge(message: string): Promise<void> {
 					avatarURL: `https://mc-heads.net/avatar/${playerName}`,
 				});
 			}
-		} else {
-			await channel.send('Webhook not found');
 		}
 	}
 }
