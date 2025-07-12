@@ -58,11 +58,11 @@ class MessageSender {
 	private formatReplyMessage(message: Message): string {
 		const repliedMember = message.mentions.members?.find((member) => member.id === message.mentions.repliedUser?.id);
 
-		const senderName = message.member?.nickname || message.member?.displayName;
+		const senderName = message.member?.nickname ?? message.member?.displayName;
 		let receiverName = 'unknown';
 
 		if (repliedMember) {
-			receiverName = repliedMember.nickname || repliedMember.displayName;
+			receiverName = repliedMember.nickname ?? repliedMember.displayName;
 		} else if (message.mentions.repliedUser) {
 			receiverName = message.mentions.repliedUser.displayName;
 		}
@@ -71,7 +71,7 @@ class MessageSender {
 	}
 
 	private formatRegularMessage(message: Message): string {
-		const senderName = message.member?.nickname || message.member?.displayName;
+		const senderName = message.member?.nickname ?? message.member?.displayName;
 		return `${senderName}: ${message.content}`;
 	}
 
