@@ -27,9 +27,13 @@
 > 4. Fill out the .env.template file, for the Minecraft account make sure your double authentication is disabled (for information, the module used is [Mineflayer](https://github.com/PrismarineJS/mineflayer)). You need :
 >
 > - The discord token, he can be generated here (in the "bot" section on developper portal) : ![token](./images/Token.png)
-> - All of the informations needed about the minecraft account (the email and the password).
+> - All of the informations needed about the minecraft account (the email).
 > - IDs of the **<ins>Text Channels</ins>** where you want to send messages, you can not set them or set them to "-1" if you want to disable the feature.
 
 > 5. Rename the .env.template to .env
 
-> 6. Open a terminal, run `docker compose up -d`, your bot is now running ! You can see the logs with `docker logs bridgebot` and check the process status with `docker ps`. By the way if some settings/environment variables are incorrect it will be shown in logs !
+> 6. Open a terminal, run `docker compose up -d`, your bot is now running !
+
+> 7. You can see the logs with `docker logs bridgebot`, in the logs you need to click on the link provided by mineflayer to actually log into Microsoft.
+
+> 8. The bot is now connected, you can check the process status with `docker ps`. By the way if some settings/environment variables are incorrect it will be shown in logs and the bot will automatically crash !

@@ -23,14 +23,13 @@ class MinecraftBot {
 	}
 
 	private createBot(): Bot {
-		if (!process.env.MINECRAFT_EMAIL || !process.env.MINECRAFT_PASSWORD) {
+		if (!process.env.MINECRAFT_EMAIL) {
 			throw new Error('Minecraft credentials not set in environment variables');
 		}
 
 		return mineflayer.createBot({
 			host: 'hypixel.net',
 			username: process.env.MINECRAFT_EMAIL,
-			password: process.env.MINECRAFT_PASSWORD,
 			version: '1.8.9',
 			auth: 'microsoft',
 		});

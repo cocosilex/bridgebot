@@ -15,11 +15,6 @@ export default function checkAllVariables() {
 			logger.error(errorMsg);
 			throw new Error(errorMsg);
 		}
-		if (!process.env.MINECRAFT_PASSWORD || process.env.MINECRAFT_PASSWORD === 'MINECRAFT_PASSWORD') {
-			const errorMsg = 'MINECRAFT_PASSWORD is not defined, please define it in .env file or provide it to docker in the CLI args';
-			logger.error(errorMsg);
-			throw new Error(errorMsg);
-		}
 		if (!SETTINGS.autoReconnectToMinecraftCooldown) {
 			const errorMsg = 'autoReconnectToMinecraftCooldown is not defined, please define it in settings.ts file';
 			logger.error(errorMsg);
