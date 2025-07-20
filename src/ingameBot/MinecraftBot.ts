@@ -15,13 +15,21 @@ interface MinecraftChatMessage {
 }
 
 class MinecraftBot {
+    private static instance: MinecraftBot;
     private bot: Bot;
     private autoReconnectCooldown: number = SETTINGS.autoReconnectToMinecraftCooldown;
     private isConnecting = false;
 
-    constructor() {
+    private constructor() {
         this.bot = this.createBot();
         this.setupEventHandlers();
+    }
+
+    public static getInstance(): MinecraftBot {
+        if (!MinecraftBot.instance) {
+            MinecraftBot.instance = new MinecraftBot();
+        }
+        return MinecraftBot.instance;
     }
 
     private createBot(): Bot {
@@ -121,6 +129,4 @@ class MinecraftBot {
     }
 }
 
-const minecraftBot = new MinecraftBot();
-
-export default minecraftBot;
+export default MinecraftBot;

@@ -1,7 +1,10 @@
-![image](./docs/images/name.png) 
+![image](./docs/images/name.png)
+
 ## What is BridgeBot ?
 
-> Bridge Bot is a tool developped by @cocosilex, he can do the discord-hypixel link.
+> Bridge Bot is a tool developped by @cocosilex, he can do the discord-hypixel link. This application have the goal to provide a simple but efficient solution for Hypixel guilds who want a bridge between the game and Discord.
+
+> **Disclaimer:** Use this application at your own risk. While BridgeBot is designed to provide a seamless and efficient solution for linking Hypixel guilds with Discord, the developers are not responsible for any issues, bans, or other consequences that may arise from its use. Please ensure you comply with Hypixel's rules and guidelines when using this tool.
 
 ## Getting Started
 
@@ -14,4 +17,3 @@
 ## Contributors
 
 > @cocosilex @Luthys @Fytecas
-

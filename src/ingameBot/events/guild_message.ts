@@ -2,7 +2,7 @@ import client from '../../utils/client.js';
 import { SETTINGS } from '../../utils/settings.js';
 import getWebHook from '../../utils/functions/getWebhook.js';
 import { ColorResolvable, EmbedBuilder, TextChannel } from 'discord.js';
-import minecraftBot from '../minecraftBot.js';
+import minecraftBot from '../MinecraftBot.js';
 import getUsernameAndRank from '../../utils/functions/getUsernameAndRank.js';
 
 export default async function bridge(message: string): Promise<void> {
