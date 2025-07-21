@@ -7,5 +7,5 @@ export default function getUsernameAndRank(message: string): { username: string;
     } else {
         username = message.slice(8, message.indexOf(' ', 9));
     }
-    return { username, rank };
+    return { username: username, rank: rank };
 }

@@ -75,7 +75,7 @@ class MinecraftBot {
                 const loggedInEmbed = new EmbedBuilder()
                     .setColor(0x008000)
                     .setAuthor({ name: 'Minecraft Bot Connection' })
-                    .setDescription(`:white_check_markThe application is now logged in Hypixel as **${this.bot.username || 'unknown'}**`);
+                    .setDescription(`:white_check_mark: The application is now logged in Hypixel as **${this.bot.username || 'unknown'}**`);
 
                 const bridgeChannel = client.channels.cache.get(SETTINGS.channels.bridgeId) as TextChannel;
                 await bridgeChannel.send({ embeds: [loggedInEmbed] });
