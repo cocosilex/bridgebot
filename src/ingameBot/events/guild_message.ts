@@ -7,10 +7,8 @@ import getUsernameAndRank from '../../utils/functions/getUsernameAndRank.js';
 
 export default async function bridge(message: string): Promise<void> {
     if (SETTINGS.channels.bridgeId === '-1') return;
-    const informationsAboutSender = message.slice(0, message.indexOf(':'));
+    const playerNameAndRank = getUsernameAndRank(message.slice(8, message.indexOf(':')));
     const messageContent = message.slice(message.indexOf(':') + 2, message.length);
-
-    const playerNameAndRank = getUsernameAndRank(informationsAboutSender);
 
     const minecraftBot = MinecraftBot.getInstance();
     if (playerNameAndRank.username === minecraftBot.getUsername()) return;
@@ -37,16 +35,16 @@ export default async function bridge(message: string): Promise<void> {
                         embedColor = '#FFAA00';
                         break;
                     case 'MVP+':
-                        embedColor = '#00AAFF';
+                        embedColor = '#0084ffff';
                         break;
                     case 'MVP':
-                        embedColor = '#FFFF00';
+                        embedColor = '#00d9ffff';
                         break;
                     case 'VIP+':
-                        embedColor = '#00FF00';
+                        embedColor = '#018601ff';
                         break;
                     case 'VIP':
-                        embedColor = '#FF00FF';
+                        embedColor = '#50b80bff';
                         break;
                 }
 
