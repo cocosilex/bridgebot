@@ -1,7 +1,7 @@
 export default function getUsernameAndRank(message: string): { username: string; rank: string } {
     let username;
     let rank = '';
-    if (message.startsWith('[') && message.indexOf('[') === message.lastIndexOf('[')) {
+    if (message.startsWith('[')) {
         username = message.slice(message.indexOf(']') + 2, message.indexOf(' ', 8));
         rank = message.slice(1, message.indexOf(']'));
     } else {
