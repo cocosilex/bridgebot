@@ -16,8 +16,8 @@ export const SETTINGS = {
     },
     // If true, send embeds for guild messages on the bridge channel
     // If false, send plain text messages
-    // DEFAULT : false
-    sendEmbedsOrNotOnBridge: false,
+    // DEFAULT : true
+    sendEmbedsOrNotOnBridge: true,
 
     // true by default, send a notification when the app connects or disconnects from Hypixel
     // If false, it will not send any notification for connection status
