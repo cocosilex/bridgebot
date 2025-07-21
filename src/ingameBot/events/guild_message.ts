@@ -2,7 +2,7 @@ import client from '../../utils/client.js';
 import { SETTINGS } from '../../utils/settings.js';
 import getWebHook from '../../utils/functions/getWebhook.js';
 import { ColorResolvable, EmbedBuilder, TextChannel } from 'discord.js';
-import minecraftBot from '../MinecraftBot.js';
+import MinecraftBot from '../MinecraftBot.js';
 import getUsernameAndRank from '../../utils/functions/getUsernameAndRank.js';
 
 export default async function bridge(message: string): Promise<void> {
@@ -12,6 +12,7 @@ export default async function bridge(message: string): Promise<void> {
 
     const playerNameAndRank = getUsernameAndRank(informationsAboutSender);
 
+    const minecraftBot = MinecraftBot.getInstance();
     if (playerNameAndRank.username === minecraftBot.getUsername()) return;
 
     const truncedMessage = messageContent.replaceAll('`', '');
