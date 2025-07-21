@@ -12,6 +12,7 @@ export const SETTINGS = {
         kickId: process.env.KICK_CHANNEL_ID ?? '-1',
         promoteDemoteId: process.env.PROMOTE_DEMOTE_CHANNEL_ID ?? '-1',
         leaveJoinId: process.env.LEAVE_JOIN_CHANNEL_ID ?? '-1',
+        muteUnmuteId: process.env.MUTE_UNMUTE_CHANNEL_ID ?? '-1',
     },
     // If true, send embeds for guild messages on the bridge channel
     // If false, send plain text messages
