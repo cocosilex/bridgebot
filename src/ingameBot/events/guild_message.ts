@@ -35,16 +35,16 @@ export default async function bridge(message: string): Promise<void> {
                         embedColor = '#FFAA00';
                         break;
                     case 'MVP+':
-                        embedColor = '#0084ffff';
+                        embedColor = '#0ca3e8';
                         break;
                     case 'MVP':
-                        embedColor = '#00d9ffff';
+                        embedColor = '#19f9f1';
                         break;
                     case 'VIP+':
-                        embedColor = '#018601ff';
+                        embedColor = '#22a129';
                         break;
                     case 'VIP':
-                        embedColor = '#50b80bff';
+                        embedColor = '#1ce300';
                         break;
                 }
 
