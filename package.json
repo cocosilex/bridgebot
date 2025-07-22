@@ -1,30 +1,30 @@
 {
-	"name": "bridgebot",
-	"version": "0.1.0",
-	"main": "",
-	"scripts": {
-		"start": "node dist/index.js",
-		"build": "tsc",
-		"build-start": "pnpm build && pnpm start"
-	},
-	"type": "module",
-	"author": "cocosilex",
-	"contributors": [
-		"cocosilex",
-		"Dario Le Hy",
-		"Luthys"
-	],
-	"license": "GPL-3.0-only",
-	"description": "",
-	"dependencies": {
-		"discord.js": "^14.21.0",
-		"mineflayer": "^4.30.0",
-		"node-cron": "^3.0.3",
-		"typescript": "^5.8.3",
-		"winston": "^3.17.0"
-	},
-	"devDependencies": {
-		"@types/node": "^22.16.0",
-		"@types/node-cron": "^3.0.11"
-	}
+    "name": "bridgebot",
+    "version": "0.1.1",
+    "main": "",
+    "scripts": {
+        "start": "node dist/index.js",
+        "build": "tsc",
+        "build-start": "pnpm build && pnpm start"
+    },
+    "type": "module",
+    "author": "cocosilex",
+    "contributors": [
+        "cocosilex",
+        "Dario Le Hy",
+        "Luthys"
+    ],
+    "license": "GPL-3.0-only",
+    "description": "",
+    "dependencies": {
+        "discord.js": "^14.21.0",
+        "mineflayer": "^4.30.0",
+        "node-cron": "^3.0.3",
+        "typescript": "^5.8.3",
+        "winston": "^3.17.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.16.0",
+        "@types/node-cron": "^3.0.11"
+    }
 }
