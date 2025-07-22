@@ -34,7 +34,7 @@ Thank you for contributing and helping improve BridgeBot!
 
 ## License
 
-## This project is licensed under the GNU General Public License (GPL). See the [LICENSE](https://github.com/cocosilex/bridgebot/blob/master/LICENSE) file for details.
+This project is licensed under the GNU General Public License (GPL). See the [LICENSE](https://github.com/cocosilex/bridgebot/blob/master/LICENSE) file for details.
 
 ---
 
