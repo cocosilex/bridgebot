@@ -87,7 +87,7 @@ class MinecraftBot {
 
             if (SETTINGS.sendNotificationWhenBotLogInOff) {
                 const loggedOutEmbed = new EmbedBuilder()
-                    .setColor(0x008000)
+                    .setColor(0xff0000)
                     .setAuthor({ name: 'Minecraft Bot Connection' })
                     .setDescription(`:no_entry: The application was disconnected from Hypixel`);
 
@@ -106,7 +106,7 @@ class MinecraftBot {
 
             if (SETTINGS.sendNotificationWhenBotLogInOff) {
                 const loggedOutEmbed = new EmbedBuilder()
-                    .setColor(0x008000)
+                    .setColor(0xff0000)
                     .setAuthor({ name: 'Minecraft Bot Connection' })
                     .setDescription(`:no_entry: The application was disconnected from Hypixel`);
 
