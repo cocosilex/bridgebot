@@ -1,5 +1,5 @@
 # ----- BUILD
-FROM node:23-alpine AS builder
+FROM node:24-alpine AS builder
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY . .
 RUN pnpm build
 
 # ----- RUN
-FROM node:23-alpine
+FROM node:24-alpine
 
 WORKDIR /app
 
